@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;400;700&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: rgb(245, 245, 245);
+    color: rgb(0, 0, 0);
+    font-family: 'Inter', sans-serif;
+    font-size: 21px;
+    line-height: 150%;
+}
+
+body {
+    padding: 15px 15px 100px 15px;
+    max-width: 610px;
+}
+
+header {
+    font-size: 25px;
+}
+
+hr {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+a {
+    color: rgb(0, 151, 58);
+    text-decoration: none;
+}
+
+b {
+    font-weight: 700;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    text-align: left;
+    line-height: 130%;
+}
+
+footer {
+    font-size: 11px;
+    line-height: 100%;
+}
+
+img#profile {
+    max-width: 220px;
+    border-radius: 50%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+@media (min-width: 600px) {
+    html {
+        font-size: 20px;
+        line-height: 150%;
+    }
+    body {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    html {
+        background-color: rgb(27, 29, 34);
+        color:  rgb(221, 221, 221);
+    }
+    a {
+        color: rgb(90, 173, 240);
+        text-decoration: none;
+    }
+}

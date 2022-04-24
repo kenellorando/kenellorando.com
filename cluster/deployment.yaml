@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: kenellorando.com
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: kenellorando.com
+  minReadySeconds: 100 # <----- figure out what this is
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxUnavailable: 1
+      maxSurge: 1
+  template:
+    metadata:
+      labels:
+        app: kenellorando.com
+    spec:
+      containers:
+      - name: kenellorando
+        image: kenellorando/kenellorando.com:latest
+        ports:
+        - containerPort: 80
