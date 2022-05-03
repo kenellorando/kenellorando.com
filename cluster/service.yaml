@@ -2,8 +2,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: kenellorando
+  namespace: kenellorando
   labels:
-    app: kenellorando.com
+    app: kenellorando
 spec:
   type: ClusterIP
   ports:
@@ -11,20 +12,4 @@ spec:
     targetPort: 80
     protocol: TCP
   selector:
-    app: kenellorando.com
-
-
-# apiVersion: v1
-# kind: Service
-# metadata:
-#   name: kenellorando
-#   labels:
-#     app: kenellorando.com
-# spec:
-#   type: NodePort
-#   ports:
-#   - nodePort: 30001
-#     port: 80
-#     protocol: TCP
-#   selector:
-#     app: kenellorando.com
+    app: kenellorando

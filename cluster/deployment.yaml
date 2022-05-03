@@ -1,12 +1,13 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: kenellorando.com
+  name: kenellorando
+  namespace: kenellorando
 spec:
   replicas: 3
   selector:
     matchLabels:
-      app: kenellorando.com
+      app: kenellorando
   minReadySeconds: 0
   strategy:
     type: RollingUpdate
@@ -16,7 +17,7 @@ spec:
   template:
     metadata:
       labels:
-        app: kenellorando.com
+        app: kenellorando
     spec:
       containers:
       - name: kenellorando
