@@ -1,3 +1,3 @@
-# kenellorando.com
+# sct
 
-This site is no longer active. The code here is only used by [@kenellorando](https://github.com/kenellorando) to test static site container deployments.
+`static-container-test` is extremely basic container application for use in testing infrastructure systems and Kubernetes clusters.

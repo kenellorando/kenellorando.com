@@ -18,40 +18,10 @@ body {
     max-width: 690px;
 }
 
-header {
-    font-size: 25px;
-}
-
-hr {
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
-a {
-    color: rgb(95, 240, 166);
-    text-decoration: none;
-}
-
-b {
-    font-weight: 700;
-}
-
-h1, h2, h3 {
+h1 {
     font-weight: 700;
     text-align: left;
     line-height: 100%;
-}
-
-footer {
-    font-size: 11px;
-    line-height: 100%;
-}
-
-img#profile {
-    max-width: 220px;
-    border-radius: 50%;
-    text-align: center;
-    margin-top: 30px;
 }
 
 @media (min-width: 600px) {
@@ -67,18 +37,3 @@ img#profile {
         padding-bottom: 100px;
     }
 }
-
-/* @media (min-width: 1600px) {
-    html {
-        font-size: 23px;
-        line-height: 150%;
-    }
-    body {
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 50px;
-        padding-bottom: 100px;
-        max-width: 800px;
-    }
-} */

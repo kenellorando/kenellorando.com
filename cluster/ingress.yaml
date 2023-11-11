@@ -1,17 +1,17 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: kenellorando
-  namespace: kenellorando
+  name: sct
+  namespace: sct
 spec:
   rules:
-  - host: kenellorando.com
+  - host: sct.cadenceradio.com
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: kenellorando
+            name: sct
             port:
               number: 8080
