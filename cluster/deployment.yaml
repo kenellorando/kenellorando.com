@@ -1,13 +1,13 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: sct
-  namespace: sct
+  name: stc
+  namespace: stc
 spec:
   replicas: 2
   selector:
     matchLabels:
-      run: sct
+      run: stc
   minReadySeconds: 0
   strategy:
     type: RollingUpdate
@@ -17,10 +17,10 @@ spec:
   template:
     metadata:
       labels:
-        run: sct
+        run: stc
     spec:
       containers:
-      - name: sct
-        image: kenellorando/sct:latest
+      - name: stc
+        image: kenellorando/stc:latest
         ports:
         - containerPort: 80

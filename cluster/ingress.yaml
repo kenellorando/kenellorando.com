@@ -1,18 +1,18 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: sct
-  namespace: sct
+  name: stc
+  namespace: stc
 spec:
   rules:
-  - host: sct.cadenceradio.com
+  - host: stc.cadenceradio.com
     http:
       paths:
       - path: /
         pathType: Prefix
         backend:
           service:
-            name: sct
+            name: stc
             port:
               number: 80
   ingressClassName: nginx

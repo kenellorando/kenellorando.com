@@ -1,3 +1,3 @@
-# sct
+# stc
 
-`static-container-test` is extremely basic container application for use in testing infrastructure systems and Kubernetes clusters.
+`static-test-container` is a basic container application meant for use in testing infrastructure systems and Kubernetes clusters.
