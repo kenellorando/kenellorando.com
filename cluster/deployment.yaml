@@ -4,10 +4,10 @@ metadata:
   name: sct
   namespace: sct
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
-      app: sct
+      run: sct
   minReadySeconds: 0
   strategy:
     type: RollingUpdate
@@ -17,7 +17,7 @@ spec:
   template:
     metadata:
       labels:
-        app: sct
+        run: sct
     spec:
       containers:
       - name: sct
